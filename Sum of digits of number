@@ -1,0 +1,14 @@
+3 5 number:900 result:0
+3 start 
+zero:0 one:1 two:2 dividend:0 ten:10 quotient:0 sum:0 
+start:7 number  dividend
+check_if_less:5 dividend ten jump1
+2 dividend ten dividend 
+1 quotient one quotient 
+3 check_if_less
+jump1:1 dividend result result 
+4 quotient zero stop 
+7 quotient dividend
+7 zero quotient 
+3 check_if_less
+stop:9
