@@ -1,0 +1,33 @@
+3 5
+first_location:88 length:0
+
+3 start
+
+index:0 one:1 zero:0 two:2 counter:0 least:0 temp:0 end:0 
+rest_element:0
+
+start:5 length two stop
+1 length first_location end
+7 first_location index
+
+next:4 index end stop 
+1 index one counter 
+7 index a1
+7 a1:0 least 
+ch:4 counter end update 
+7 counter a2 
+5 a2:0 least swap
+next1:1 counter one counter 
+3 ch
+swap:7 least temp
+7 counter a4
+7 a4:0 least 
+7 counter a5
+7 temp a5:0
+3 next1
+update:7 index a6
+7 least a6:0
+1 index one index 
+3 next
+
+stop:9
