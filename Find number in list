@@ -1,0 +1,17 @@
+3 7 
+first_element:39 length:5 target:2 result:0
+3 start
+
+one:1 counter:0 e1:0
+
+start:7 first_element address
+ch1:4 counter length stop
+ch2:4 target address:0 out
+
+1 address one address
+1 counter one counter
+3 ch1
+stop:9
+out:7 one result
+3 stop
+5 4 8 9 0 4 2
