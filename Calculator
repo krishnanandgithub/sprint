@@ -1,0 +1,33 @@
+3 start
+num1:0 num2:0 result:0 
+
+start:6 instruction 6 num1 6 num2 3 start2
+
+instruction:0 
+multiplicand:0 multiplier:0
+dividend:0 divisor:0
+zero:0 one:1
+plus:1 minus:2 multiply:3 divide:4
+
+start2:4 instruction plus add
+4 instruction minus sub
+4 instruction multiply mul
+4 instruction divide div
+
+add:1 num1 num2 result
+stop:9
+sub:2 num1 num2 result
+9
+mul:7 num1 multiplicand 
+7 num2 multiplier
+check:4 multiplier zero stop
+1 multiplicand result result
+2 multiplier one multiplier
+3 check
+
+div:7 num1 dividend
+7 num2 divisor
+check2:5 dividend divisor stop
+2 dividend divisor dividend
+1 result one result
+3 check2
