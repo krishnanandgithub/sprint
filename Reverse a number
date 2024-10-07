@@ -1,0 +1,20 @@
+3 5
+num:2345 r-n:0 3 start div:0 ten:10 mul:0 q:0 one:1 zero:0 
+start:5 num zero stop
+7 num div
+start2:5 div ten 34
+2 div ten div
+1 q one q 
+3 start2
+7 r-n mul
+7 zero r-n
+jeq:4 mul zero 54
+1 r-n ten r-n 
+2 mul one mul 
+3 jeq
+1 r-n div r-n 
+jeq2:4 q zero stop
+7 q div 
+7 zero q 
+3 start2
+stop:9 
