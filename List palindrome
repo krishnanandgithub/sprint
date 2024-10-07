@@ -1,0 +1,29 @@
+6 first_element_position:95 length:6 result:1
+3 start 
+one:1 zero:0 two:2 
+counter:0 end:0 rest_element:0 index:0
+start:5 length two copy
+2 length one rest_element 
+1 rest_element first_element_position end
+1 end one index 
+main_check:5 end first_element_position jump
+7 end a
+7 index b
+7 a:0 b:0
+2 end one end 
+1 index one index
+3 main_check 
+jump:7 first_element_position end 
+1 first_element_position length index
+check:4 counter length copy
+7 end c
+7 index d
+4 c:0 d:0 update 
+stop:9
+update:1 end one end 
+1 index one index 
+1 counter one counter 
+3 check 
+copy:7 two result 
+3 stop
+1 2 3 3 2 1
