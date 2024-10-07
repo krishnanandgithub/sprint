@@ -1,0 +1,128 @@
+3 start 
+
+3 7 6 3 0 0 8 3 4 5 3 16 4 3 6 9
+
+
+
+
+
+zero:0 one:1 two:2 three:3 four:4 five:5 six:6 seven:7 eight:8 nine:9 multiplicand:0 multiplier:0 result:0 counter:0
+index:3 
+instruction:0 address:0
+
+start:7 index b
+7 b:0 instruction
+
+4 instruction three j3
+4 instruction one j1
+4 instruction two j2
+4 instruction four j4
+4 instruction five j5
+4 instruction seven j7
+4 instruction zero j0
+4 instruction nine j9
+4 instruction eight j8
+
+
+j3:1 index one index
+7 index th1
+1 th1:0 two index
+3 start
+
+j8:1 index one index
+7 index mul1
+1 mul1:0 two mul4
+7 mul4:0 multiplicand
+1 index one index
+7 index mul2
+1 mul2:0 two mul5
+7 mul5:0 multiplier
+ch1:4 multiplier zero jump1
+1 multiplicand result result
+2 multiplier one multiplier
+3 ch1
+jump1:1 index one index
+7 index mul3
+1 mul3:0 two mul6
+7 result mul6:0
+1 index one index
+3 start
+
+
+j1:1 index one index
+7 index add1
+1 add1:0 two add4
+1 index one index
+7 index add2
+1 add2:0 two add5
+1 index one index
+7 index add3
+1 add3:0 two add6
+1 add4:0 add5:0 add6:0
+1 index one index
+3 start
+
+j2:1 index one index
+7 index sub1
+1 sub1:0 two sub4
+1 index one index
+7 index sub2
+1 sub2:0 two sub5
+1 index one index
+7 index sub3
+1 sub3:0 two sub6
+2 sub4:0 sub5:0 sub6:0
+1 index one index
+3 start
+
+j4:1 index one index
+7 index if_eq1
+1 if_eq1:0 two if_eq4
+1 index one index
+7 index if_eq2
+1 if_eq2:0 two if_eq5
+1 index one index
+7 index if_eq3
+1 if_eq3:0 two address
+4 if_eq4:0 if_eq5:0 jump_if_eq
+1 index one index
+3 start
+jump_if_eq:7 address index
+3 start
+
+j5:1 index one index
+7 index lt1
+1 lt1:0 two lt4
+1 index one index
+7 index lt2
+1 lt2:0 two lt5
+1 index one index
+7 index lt3
+1 lt3:0 two address
+5 lt4:0 lt5:0 jil
+1 index one index
+3 start
+jil:7 address index
+3 start
+
+j7:1 index one index
+7 index cp1
+1 cp1:0 two cp4
+1 index one index
+7 index cp2
+1 cp2:0 two cp5
+7 cp4:0 cp5:0
+1 index one index
+3 start
+
+j0:1 index one index
+7 index put1
+1 put1:0 two put4
+1 index one index
+7 index put2
+1 put2:0 two put5
+0 put4:0 put5:0
+1 index one index
+3 start
+
+j9:9
