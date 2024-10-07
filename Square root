@@ -1,0 +1,22 @@
+3 5
+num:4 res:0
+3 start
+mld:0 mpr:0 sq:0 c:2 one:1 zero:0
+start:5 num c jeq2
+copy1:7 c mld 
+7 c mpr 
+jeq1:4 mpr zero jl1
+1 sq mld sq
+2 mpr one mpr 
+3 jeq1
+jl1:5 num sq 50
+1 c one c 
+7 zero sq
+3 copy1
+2 c one res
+stop:9
+jeq2:4 num zero 64 
+7 one res 
+3 stop 
+7 zero res 
+3 stop
